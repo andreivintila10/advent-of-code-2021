@@ -25,8 +25,6 @@ def main():
 			boards.append(board)
 			skip = file.readline()
 
-		total_no_of_boards = len(boards)
-		no_of_winner_boards = 0
 		last_score = 0
 		for number in numbers:
 			for board in boards:
@@ -35,7 +33,6 @@ def main():
 
 				score = checkBoard(board, number)
 				if score:
-					no_of_winner_boards += 1
 					last_score = score
 
 		print("Answer is %d" % last_score)

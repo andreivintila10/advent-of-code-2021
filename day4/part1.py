@@ -19,7 +19,6 @@ def main():
 					break
 				board_row = list(map(lambda cols: { 'value': int(cols), 'set': 0 }, line.split()))
 				board['matrix'].append(board_row)
-				# print("%s" % line)
 			if ok == 0:
 				break
 			boards.append(board)
